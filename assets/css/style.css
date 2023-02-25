@@ -1,0 +1,139 @@
+
+:root {
+  /* styling variables */
+  --dark: #d81111;
+  --light: #ffffff;
+  --navlink-color: #b9c6ae;
+  --darktext: yellow;
+  --BGColour: rgb(8, 8, 8);
+  --snippetheadcolours: #2b0f0f;
+}
+
+body {
+  background-color: var(--BGColour);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+header {
+  padding: 0.5%;
+  font: bolder;
+  background-color: var(--dark);
+  color: var(--darktext);
+  text-align:center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+subtitle {
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.boxed:hover{
+ font-style: italic;
+}
+
+.subboxed:hover{
+  font-size: 150%;
+  user-select: all;
+}
+
+ .boxed {
+  color: whitesmoke;
+  border: 12px solid var(--dark) ;
+  text-align: center;
+  margin-top: 1%;
+  padding: 5px;
+  background-image: linear-gradient(to bottom, rgb(14, 11, 11) 0%, rgba(240, 40, 40, 1) 100%);
+  background-clip: content-box, padding-box;
+}
+
+
+.snippetbox {
+  color: whitesmoke;
+  border: 12px solid var(--dark) ;
+  text-align: center;
+  margin-top: 1%;
+  padding: 5px;
+  background-image: linear-gradient(to bottom, rgb(14, 11, 11) 0%, rgba(240, 40, 40, 1) 100%);
+  
+}
+
+.subboxed {
+  
+  text-align: left;
+  margin-top: 1%;
+  color: yellow;
+  
+}
+
+.snippetheadings {
+  border: 2px solid  var(--snippetheadcolours);
+  border-radius: 25px;
+  text-align: center;
+}
+
+.cardsrow1 {
+  
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.cardrow1 {
+   flex: 0 1 24%;
+   
+  }
+
+  .cardrow1:hover{
+    font-size: 150%;
+  }
+
+
+
+h1 {
+  font-size: 350%;
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 250%;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+  /* force footer to bottom of the page, stay stretched width wise  */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /*                                                                */
+
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 200%;
+  bottom: 0;
+  
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 1200px;
+  }
+}
