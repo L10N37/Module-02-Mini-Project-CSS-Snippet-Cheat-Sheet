@@ -33,7 +33,7 @@
  
       <section class="cardsrow1">
            
-<article class="cardrow1">
+                <article class="cardrow1">
 
   <div class="snippetbox">
         <h2 class="snippetheadings"> Flexbox Row </h2>
@@ -46,41 +46,110 @@
         }
         </p>
   </div>
-
-        
-      </article><!-- /card-one -->
-
-<article class="cardrow1">
-  <h2 class="snippetheadings"> Flexbox Column </h2>
-        <p>Use this to create a Flexbox column layout.</p>
-      </article><!-- /card-two -->
-
-<article class="cardrow1">
-  <h2 class="snippetheadings">CSS Grid Layout</h2>
-        <p>Build a 12-column layout using CSS Grid</p>
-      </article><!-- /card-three -->
+                </article><!-- /card-one -->
 
 
-            </section>
-
-
-<section class="cardsrow1">
            
-<article class="cardrow1">
-  <h1 class="snippetheadings"> Linear Gradients </h1>
-      <p>This will create a background linear gradient from top to bottom</p>
-</article><!-- /card-four -->
+              <article class="cardrow1">
+  
+    <div class="snippetbox">
+          <h2 class="snippetheadings"> Flexbox Row </h2>
+          <p>Use this to create a Flexbox column layout.</p>
+  
+          <p class="subboxed">
+         .column {                  <br>
+          display: flex;            <br>
+          flex-direction: column;   <br>
+         }              
+          
+          </p>
+    </div>
+              </article><!-- /card-two -->
 
-<article class="cardrow1">
-  <h1 class="snippetheadings"> Box Transition Glow </h1>
-        <p>Use transition and box shadows to glow on hover</p>
-</article><!-- /card-five -->
+              <article class="cardrow1">
+  
+    <div class="snippetbox">
+          <h2 class="snippetheadings"> CSS Grid Layout </h2>
+          <p>Build a 12-column layout using CSS Grid.</p>
+  
+          <p class="subboxed">
+        .grid {                                       <br>
+          display: grid;                              <br>
+          width: 100%;                                <br>
+          grid-template-columns: repeat(12, 1fr);     <br>
+        }       
+          
+          </p>
+    </div>
+              </article><!-- /card-three -->
 
-<article class="cardrow1">
-  <h1 class="snippetheadings"> Overlay Card with Title </h1>
-        <p>Use position properties and negative margins to raise elements higher than 
-          their natural starting point</p>
-</article><!-- /card-six -->
+
+              <div class="snippetbox">
+                <h2 class="snippetheadings"> Linear Gradients</h2>
+                <p>This will create a background linear gradient from top to bottom.</p>
+        
+                <p class="subboxed">
+         .linear-gradient-background {              <br>
+          background-image: linear-gradient(        <br>
+            rgba(232, 102, 236, 0.3) 0%,            <br>
+            rgba((232, 102, 236, 0.6) 100%)         <br>
+            );                                      <br>
+        }                                           
+                
+                </p>
+          </div>
+                    </article><!-- /card-four -->
+
+
+                    <div class="snippetbox">
+                      <h2 class="snippetheadings"> Box Transition Glow</h2>
+                      <p>Use transition and box shadows to glow on hover</p>
+              
+                      <p class="subboxed">
+             .code-card .card-header {             <br>
+              border-radius: 8px;                  <br>
+              transition: all 0.5s ease-in-out;    <br>
+             }                                     <br>
+                                                    <br>
+             .card:hover,                           <br>
+             .code-card:hover .card-header {        <br>
+              box-shadow: inset 0px 0px 8px         <br>
+              rgba(232,102,236,1), 0 0 15px         <br>
+              rgba(232, 102, 236, 1);               <br>
+             }                        
+                      
+                      </p>
+                </div>
+                          </article><!-- /card-five -->
+
+
+
+
+                        </div>
+                      </article><!-- /card-four -->
+  
+  
+                      <div class="snippetbox">
+                        <h2 class="snippetheadings">Overlay Card with Title</h2>
+                        <p> Use position properties and negative margins to raise<br>
+                          elements higher than their natural starting point.</p>
+                
+                        <p class="subboxed">
+               .code-card .card-header {             <br>
+                border-radius: 8px;                  <br>
+                transition: all 0.5s ease-in-out;    <br>
+               }                                     <br>
+                                                      <br>
+               .card:hover,                           <br>
+               .code-card:hover .card-header {        <br>
+                box-shadow: inset 0px 0px 8px         <br>
+                rgba(232,102,236,1), 0 0 15px         <br>
+                rgba(232, 102, 236, 1);               <br>
+               }                        
+                        
+                        </p>
+                  </div>
+                            </article><!-- /card-six -->
 
 
           </section>
