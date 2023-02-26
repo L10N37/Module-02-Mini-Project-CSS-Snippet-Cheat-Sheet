@@ -112,12 +112,8 @@ h2 {
 
 
 footer {
-  /* force footer to bottom of the page, stay stretched width wise  */
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /*                                                                */
-
+                                                              */
+  flex-direction: column;
   display: flex;
   justify-content: center;
   padding: 2%;
@@ -125,6 +121,8 @@ footer {
   color: var(--light);
   font-size: 200%;
   bottom: 0;
+  width: 100%;
+  align-self: center;
   
 }
 
