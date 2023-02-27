@@ -31,6 +31,7 @@ subtitle {
 
 .boxed:hover{
  font-style: italic;
+ 
 }
 
 .subboxed:hover{
@@ -78,6 +79,10 @@ rgb(236, 236, 102);
   text-align: center;
 }
 
+.snippetheadings:hover{
+  border: 8px solid  var(--snippetheadcolours);
+}
+
 .cardsrow1 {
   
   margin: 50px;
@@ -94,6 +99,9 @@ rgb(236, 236, 102);
 
   .cardrow1:hover{
     font-size: 150%;
+    border: 10px inset yellow;
+    transition: all 0.5s ease-in-out;
+
   }
 
 
